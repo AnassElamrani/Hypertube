@@ -1,0 +1,172 @@
+/* html, body{
+    overflow: hidden;
+} */
+
+.visitorpage{
+    min-height: 100vh;
+    display: flex;
+    background-color: #111111;
+}
+
+.welcome-msg{
+    background-image: url("@/assets/img/backgroundauth.jpg");
+    width: 50%;
+    height: 100vh;
+    padding-bottom: 50px;
+}
+#black-shadow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.72);
+}
+
+#flag{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    right: 40px;
+}
+#flag:hover{
+    cursor: pointer;
+}
+
+.action-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-size: auto 400px;
+
+}
+.action-box button{
+    font-size: 20px;
+}
+
+.the-msg{
+    text-align: center;
+    width: 100%;
+}
+
+#msg-txt{
+    /* font-family: 'Nerko One', cursive; */
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+#s-txt{
+    color: white;
+    /* max-width: 90%; */
+}
+
+
+
+.the-box{
+    padding: 10px 0px;
+    border-radius: 20px;
+    background-color: #1e1e1e;
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
+}
+#blogo{
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    width: 64%;
+    margin: auto;
+    justify-content: center;
+}
+#blogo:hover{
+    cursor: pointer;
+}
+
+#blogo-container{
+    display: flex;
+    text-align: center;
+    padding: 15px 0px;
+    border-bottom: solid 1.5px #111111;
+}
+.label{
+    color: #e4e6eb;
+}
+
+#login-form{
+    padding: 40px;
+}
+/* #login */
+#f-pswd{
+    margin-bottom: 16px;
+    margin-top: -8px;
+}
+#f-pswd a{
+    color: #c1c1c1;
+}
+#f-pswd:hover{
+    text-decoration: underline;
+}
+#buttom-links{
+    font-size: 20px;
+    text-align: center;
+    margin-top: -30px;
+    color: #c1c1c1;
+}
+#buttom-links a:hover{
+    text-decoration: underline;
+    color: #3fc58dc1;
+}
+
+.help{
+    margin-bottom: -5px;
+    margin-top: 0px;
+}
+
+@media (max-width: 800px)
+{
+    html, body{
+        overflow: auto;
+    }
+    .visitorpage{
+        display: flex;
+        flex-flow: column;
+    }
+    .action-box{
+        order: 1;
+        width: 100%;
+        padding: 50px 0px ;
+    }
+    .the-box{
+        width: 100%;
+        border-radius: 10px;
+        padding: 10px 0;
+    }
+    #login-form{
+        padding: 20px;
+    }
+    #buttom-links{
+        font-size: 20px;
+        text-align: center;
+        margin-top: -10px;
+    }
+    .welcome-msg{
+        /* padding-top: /30px; */
+        order: 2;
+        width: 100%;
+    }
+    .the-msg{
+        text-align: center;
+        width: 90%;
+    }
+    /* #slogan{
+        color: #950740;
+    }
+    #msg-txt{
+        font-weight: 400;
+    } */
+
+}

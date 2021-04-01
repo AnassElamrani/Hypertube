@@ -1,0 +1,30 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "private": true,
+  "config": {
+    "nuxt": {
+      "host": "0.0.0.0",
+      "port": "8080"
+    }
+  },
+  "scripts": {
+    "dev": "npm install -f && nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.13.1",
+    "core-js": "^3.8.3",
+    "nuxt": "^2.14.12",
+    "nuxt-buefy": "^0.4.4",
+    "nuxt-i18n": "^6.21.1",
+    "redirect-ssl": "^2.0.0"
+  },
+  "devDependencies": {
+    "fibers": "^5.0.0",
+    "sass": "^1.32.8",
+    "sass-loader": "^10.1.1"
+  }
+}

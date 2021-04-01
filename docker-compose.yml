@@ -1,0 +1,28 @@
+version: "3.1"
+services:
+    api:
+        build: ./api
+        ports: 
+            - "3000:3000"
+            - "443:443"
+        volumes:
+            - ./api:/usr/src/app
+        links:
+            - db
+        restart: on-failure
+        networks:
+            - default
+    client:
+        build: ./client
+        ports: 
+            - "8080:8080"
+        volumes:
+            - ./client:/usr/src/client
+    db:
+        image: mongo
+        ports: 
+            - "27017:27017"
+        environment:
+            TZ: "Africa/Casablanca"
+volumes:
+    persistent:
